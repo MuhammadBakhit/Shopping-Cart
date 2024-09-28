@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    color: #888888;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    border-radius: 20px;
+    padding: 30px 20px;
+    margin-top: 0px !important;
+    background-color: #f5f5f5;
+}
+.links {
+    margin-top: -18px;
+}
+.card {
+    border: none;
+    cursor: pointer;
+    border-radius: 15px;
+}
+button{
+    width: 100%;
+    background-color: #fff;
+    color: #000000;
+    font-weight: 500;
+    border: 1px solid #bb2d3b;
+    padding: 5px;
+    border-radius: 5px;
+    transition: 0.3s;
+    margin-top: 15px;
+}
+.card:hover button{
+    background-color: #bb2d3b;
+    color: #fff;
+}
+.data h5 {
+    font-size: 15px;
+    color: #0068c9;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.data h5:hover {
+    color: #000000;
+}
+.data .par {
+    color: #000000;
+    font-weight: 600;
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg">
+  <div class="container-fluid">
+    <div class="logo">
+      <img src="./images/logo.png" alt="">
+    </div>
+    <div class="navbar-collapse" id="navContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item mx-3">
+          <a class="nav-link active text-white" aria-current="page" href="#">Electronics</a>
+        </li>
+        <li class="nav-item mx-3">
+          <a class="nav-link text-white" href="#">Airpods</a>
+        </li>
+        <li class="nav-item mx-3">
+          <a class="nav-link text-white">Smart Watch</a>
+        </li>
+        <li class="nav-item mx-3">
+          <a class="nav-link text-white">iPhone</a>
+        </li>
+        <li class="nav-item mx-3">
+          <a class="nav-link text-white">Computers</a>
+        </li>
+      </ul>
+    </div>
+    <div class="log">
+      <a href="logout.html" class="login"><span>My Account</span></a>
+      <a href="./cart.html">
+        <i class="fa fa-shopping-cart"></i>
+        <span id="cartBadge">0</span>
+      </a>
+    </div>
+  </div>
+</nav>
+<div class="container">
+    <div class="navv d-flex justify-content-between align-items-center">
+        <ul class="nav nav-underline align-items-center">
+            <li class="nav-item">
+              <a class="nav-link active"href="#">Our Trending Products</a>
+            </li>
+            <li class="nav-item position-relative">
+              <a class="nav-link activty" href="#">New Products</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link act" href="#">Best Selling</a>
+            </li>
+          </ul>
+          <div class="arrow">
+            <i class="fa-solid fa-angle-left"></i>
+            <i class="fa-solid fa-angle-right"></i>
+          </div>
+    </div>
+    <div id="products" class="row w-100 justify-content-evenly">
+        <!-- Products will be inserted here -->     
+    </div>
+</div>
+
+<script src="./js/main.js"></script>
+</body>
+</html>

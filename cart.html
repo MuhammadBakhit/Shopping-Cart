@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/cart.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <div class="logo">
+            <img src="./images/logo.png" alt="">
+          </div>
+          <div class="navbar-collapse" id="navContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item mx-3">
+                <a class="nav-link active text-white" aria-current="page" href="#">Electronics</a>
+              </li>
+              <li class="nav-item mx-3">
+                <a class="nav-link text-white" href="#">Airpods</a>
+              </li>
+              <li class="nav-item mx-3">
+                <a class="nav-link text-white">Smart Watch</a>
+              </li>
+              <li class="nav-item mx-3">
+                <a class="nav-link text-white">iPhone</a>
+              </li>
+              <li class="nav-item mx-3">
+                <a class="nav-link text-white">Computers</a>
+              </li>
+            </ul>
+          </div>
+          <div class="log">
+            <a href="./cart.html">
+              <i class="fa fa-shopping-cart"></i>
+              <span id="cartBadge">!</span>
+            </a>
+          </div>
+        </div>
+    </nav>
+    <div class="container navv d-flex justify-content-between align-items-center bg-body">
+        <div>
+            <div>
+                <h2 class="mb-4 fw-bolder">Shopping Cart</h2>
+            </div>
+            <div class="links d-flex align-items-center">
+                <a class="nav-link disabled fs-4" aria-disabled="true">Cart > </a>
+                <a class="nav-link text-black fs-5 fw-bolder"> Product</a>
+            </div>
+        </div>
+        <h3>Total: $<span id="totalPrice">0</span></h3>
+    </div>
+    <div class="container">
+        <div id="cartItems" class="row">
+        </div>
+    </div>
+
+
+    <script src="./js/cart.js"></script>
+</body>
+</html>

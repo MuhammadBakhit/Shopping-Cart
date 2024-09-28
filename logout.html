@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logout</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/all.min">
+    <link rel="stylesheet" href="./css/cart.css">
+</head>
+<style>
+    button{
+        width: fit-content;
+    }
+</style>
+<body>
+    <div class="container navv d-flex justify-content-between align-items-center bg-body">
+        <div>
+            <div>
+                <h2 class="mb-4 fw-bolder text-black">My Account</h2>
+            </div>
+            <div class="links d-flex align-items-center">
+                <a class="nav-link disabled fs-4 fw-bolder" aria-disabled="true">Logout > </a>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <h2>Welcome</h2>
+        <p id="welcomeMessage"></p>
+        <button id="logoutBtn" class="btn btn-danger">Logout</button>
+    </div>
+
+
+    <script>
+        // Logout functionality
+        const user = JSON.parse(localStorage.getItem('user'));
+        if (!user) {
+            window.location.href = 'index.html';
+        } else {
+            document.getElementById('welcomeMessage').innerText = `Welcome, ${user.email}`;
+        }
+
+        document.getElementById('logoutBtn').addEventListener('click', function () {
+            localStorage.removeItem('user');
+            window.location.href = 'index.html';
+        });
+    </script>
+</body>
+</html>
